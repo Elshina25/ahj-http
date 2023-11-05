@@ -1,7 +1,7 @@
 import TicketWidget from "../TicketWidget/TicketWidget";
 
 export default class FetchApi {
-  static URL = "https://backend-4zuf.onrender.com";
+  static URL = "http://localhost:7070";
 
   //получение всех тикетов и отображение на странице
   static async getAllTickets() {
