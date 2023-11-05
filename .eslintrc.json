@@ -1,0 +1,20 @@
+{
+  "plugins": ["prettier", "node"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "no-unused-vars": "warn"
+  }
+}

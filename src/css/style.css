@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget{
+    width: 800px;
+    margin: 30px auto 0;
+}
+.header-widget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 15px;
+}
+button.add {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #0666c9;
+    background: #1886f7;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.widget-container{
+
+}
+.widget-container .ticket-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #c7f4ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.widget-container .ticket-wrapper .ticket-status {
+    padding: 5px;
+    width: 22px;
+    height: 22px;
+    margin: 0 10px 0 0;
+}
+.widget-container .ticket-wrapper .ticket-name {
+    width: 500px;
+    display: inline-block;
+    padding: 10px 0;
+}
+.widget-container .ticket-wrapper .date-created {
+    width: 160px;
+}
+.widget-container .ticket-wrapper .edit-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #045c0b;
+    background: #045c0b;
+    color: #fff;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+.widget-container .ticket-wrapper .delete-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.widget-container .ticket-wrapper .ticket-description{
+    display: none;
+}
+.widget-container .ticket-wrapper .ticket-description.active {
+    width: 100%;
+    display: block;
+    max-width: 500px;
+    margin-left: 39px;
+    padding: 10px 0 5px;
+}
+
+
+form.form.add-ticket, form.form.edit-ticket, .modal-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    padding: 15px;
+    border: 2px solid #05488d;
+    border-radius: 10px;
+    z-index: 9;
+    background: #fff;
+}
+form.form.add-ticket>span, form.form.edit-ticket>span, .modal-delete>span{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+form.form.add-ticket .form-group, form.form.edit-ticket .form-group{
+
+}
+form.form.add-ticket .form-group .description, form.form.edit-ticket .form-group .description{
+    display: block;
+    padding: 5px 0;
+}
+form.form.add-ticket .form-group input, form.form.edit-ticket .form-group input{
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+form.form.add-ticket .form-group textarea, form.form.edit-ticket .form-group textarea{
+    width: 500px;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+form.form.add-ticket button, form.form.edit-ticket button, .modal-delete button{
+    font-size: 16px;
+    padding: 7px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+form.form.add-ticket .button-ok, form.form.edit-ticket .button-ok, .modal-delete .delete-ticket{
+    color: #fff;
+    background: #045c0b;
+    border: none;
+    border-radius: 5px;
+}
+form.form.add-ticket .button-cancel, form.form.edit-ticket .button-cancel, .modal-delete .cancel-delete-ticket{
+    color: #fff;
+    background: #f90303;
+    border: none;
+    border-radius: 5px;
+}
